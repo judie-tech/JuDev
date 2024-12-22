@@ -18,6 +18,8 @@ import {
   SiExpress,
   SiMongodb,
   SiAngular,
+  SiTailwindcss,
+  SiBootstrap,
 } from "react-icons/si";
 
 const skills = [
@@ -27,9 +29,12 @@ const skills = [
       { name: "React", icon: FaReact },
       { name: "Next.js", icon: SiNextdotjs },
       { name: "Vue.js", icon: SiVuedotjs },
+      { name: "Angular", icon: SiAngular },
       { name: "HTML5", icon: FaHtml5 },
       { name: "CSS3", icon: FaCss3 },
       { name: "JavaScript", icon: FaJs },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Bootstrap", icon: SiBootstrap },
     ],
   },
   {
@@ -39,6 +44,7 @@ const skills = [
       { name: "Express.js", icon: SiExpress },
       { name: "Python", icon: FaPython },
       { name: "PHP", icon: FaPhp },
+      { name: "Java", icon: FaJava },
     ],
   },
   {
