@@ -1,17 +1,30 @@
-"use client";
+"use client"; // Mark this as a Client Component
 
 import React, { useState } from "react";
+import { IconType } from "react-icons"; // Import IconType for proper typing
 import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
   FaLinkedin,
   FaGithub,
-  FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
 
-const ContactItem = ({ icon: Icon, label, value, link }) => {
+// Define the types for the props
+interface ContactItemProps {
+  icon: IconType; // React-icons exports a type for icons
+  label: string;
+  value: string;
+  link?: string; // Optional because not all items have a link
+}
+
+const ContactItem: React.FC<ContactItemProps> = ({
+  icon: Icon,
+  label,
+  value,
+  link,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -127,8 +140,8 @@ export function Contact() {
           </div>
           <div className="mt-8 text-center">
             <p className="text-lg animate-pulse">
-              I'm always open to new opportunities and collaborations. Feel free
-              to reach out!
+              I am always open to new opportunities and collaborations. Feel
+              free to reach out!
             </p>
           </div>
         </div>

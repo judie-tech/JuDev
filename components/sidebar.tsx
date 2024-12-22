@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import {
   FaHome,
@@ -62,9 +63,11 @@ export function Sidebar() {
       >
         <div className="flex flex-col h-full">
           <div className="p-6">
-            <img
+            <Image
               src="/images/n.jpeg"
               alt="Logo"
+              width={64} // Set an appropriate width
+              height={64} // Set an appropriate height
               className="w-16 h-16 mx-auto rounded-full animate-spin-slow"
             />
           </div>

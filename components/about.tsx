@@ -56,11 +56,12 @@ export function About() {
         </h2>
         <div className="bg-secondary rounded-lg p-8 shadow-lg animate-fadeIn">
           <p className="text-lg mb-8 font-montserrat">
-            Hey! I’m a developer who loves to get my hands dirty with code. I’m
-            always up for a good challenge and enjoy building things that make
-            life easier. The best part? Constantly learning and growing along
-            the way.
+            Hey! I am a developer who loves to get my hands dirty with code. I
+            am always up for a good challenge and enjoy building things that
+            make life easier. The best part? Constantly learning and growing
+            along the way.
           </p>
+
           <div className="mb-8">
             <h3 className="text-2xl font-semibold mb-4">My Interests</h3>
             <div className="flex justify-center space-x-4 mb-4">
@@ -86,7 +87,7 @@ export function About() {
             </div>
           </div>
           <p className="text-lg font-montserrat">
-            Let's collaborate and bring your ideas to life!
+            Let us collaborate and bring your ideas to life!
           </p>
         </div>
       </div>

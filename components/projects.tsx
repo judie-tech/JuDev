@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
@@ -60,11 +61,14 @@ export function Projects() {
                   : "opacity-0 translate-x-full"
               }`}
             >
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover"
+                fill
+                sizes="100vw"
+                className="object-cover"
               />
+
               <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-4">
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="text-2xl font-bold">{project.title}</h3>

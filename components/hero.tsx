@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaGithub, FaLinkedin, FaInstagram, FaDribbble } from "react-icons/fa";
 
 export function Hero() {
@@ -8,14 +9,16 @@ export function Hero() {
     >
       <div className="text-center">
         <div className="mb-8 animate-fadeIn">
-          <img
+          <Image
             src="/images/n.jpeg"
             alt="Your Name"
+            width={192} // Specify the width (in pixels)
+            height={192}
             className="w-48 h-48 rounded-full mx-auto border-4 border-primary"
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-4 font-playfair animate-slideInTop">
-          Hi, I'm <span className="text-primary">Judy Kagia</span>
+          Hi, I am <span className="text-primary">Judy Kagia</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 font-montserrat animate-slideInBottom">
           Software Developer | Problem Solver | Tech Enthusiast
