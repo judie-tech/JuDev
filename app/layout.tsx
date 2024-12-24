@@ -12,9 +12,29 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "JuDev",
-  description:
-    "Personal portfolio of Your Name, a passionate software developer.",
+  title: "Judy Kagia - Software Developer",
+  description: "Software Developer, Problem Solver, Tech Enthusiast",
+  openGraph: {
+    title: "Judy Kagia - Software Developer",
+    description: "Software Developer, Problem Solver, Tech Enthusiast",
+    images: [
+      {
+        url: "/images/n.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "JuDev - Software Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "JuDev - Software Developer",
+    description: "Software Developer, Problem Solver, Tech Enthusiast",
+    images: ["/images/n.jpeg"],
+  },
+  icons: {
+    icon: "/favicon.jpeg", //
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +44,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.jpeg" sizes="any" />
+        {/* Optional: Add a link for an apple-touch-icon */}
+        <link rel="apple-touch-icon" href="/favicon.jpeg" />
+      </head>
       <body
         className={`${inter.variable} ${montserrat.variable} ${playfair.variable} font-sans`}
       >
