@@ -64,7 +64,7 @@ export function Sidebar() {
         <div className="flex flex-col h-full">
           <div className="p-6">
             <img
-              src="/your-logo.png"
+              src="/images/n.jpeg"
               alt="Logo"
               className="w-16 h-16 mx-auto rounded-full animate-spin-slow"
             />
