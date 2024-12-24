@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
 import {
   FaHome,
@@ -53,6 +52,7 @@ export function Sidebar() {
       <button
         className="fixed top-4 left-4 z-50 md:hidden bg-primary text-primary-foreground p-2 rounded-full shadow-lg animate-pulse"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
       >
         <FaBars size={24} />
       </button>
@@ -63,11 +63,9 @@ export function Sidebar() {
       >
         <div className="flex flex-col h-full">
           <div className="p-6">
-            <Image
-              src="/images/n.jpeg"
+            <img
+              src="/your-logo.png"
               alt="Logo"
-              width={64} // Set an appropriate width
-              height={64} // Set an appropriate height
               className="w-16 h-16 mx-auto rounded-full animate-spin-slow"
             />
           </div>
@@ -99,7 +97,7 @@ export function Sidebar() {
           </nav>
           <div className="p-6">
             <p className="text-sm text-center animate-pulse">
-              © 2025 Judy Kagia
+              © 2023 Your Name
             </p>
           </div>
         </div>

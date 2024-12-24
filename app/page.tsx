@@ -7,9 +7,9 @@ import { Contact } from "@/components/contact";
 
 export default function Home() {
   return (
-    <div className="bg-background text-foreground min-h-screen flex">
+    <div className="bg-background text-foreground min-h-screen flex flex-col md:flex-row">
       <Sidebar />
-      <main className="flex-1 ml-16 md:ml-64 scroll-smooth">
+      <main className="flex-1 md:ml-64 px-4 md:px-8 max-w-screen-xl mx-auto w-full">
         <Hero />
         <About />
         <Skills />

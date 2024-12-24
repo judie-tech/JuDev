@@ -1,25 +1,23 @@
 import {
   FaReact,
   FaNodeJs,
-  FaPython,
   FaDatabase,
-  FaDocker,
   FaAws,
   FaHtml5,
   FaCss3,
   FaJs,
-  FaPhp,
-  FaJava,
   FaGit,
+  FaServer,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
-  SiVuedotjs,
   SiExpress,
   SiMongodb,
-  SiAngular,
   SiTailwindcss,
   SiBootstrap,
+  SiSvelte,
+  SiMysql,
+  SiPostgresql,
 } from "react-icons/si";
 
 const skills = [
@@ -28,8 +26,7 @@ const skills = [
     techs: [
       { name: "React", icon: FaReact },
       { name: "Next.js", icon: SiNextdotjs },
-      { name: "Vue.js", icon: SiVuedotjs },
-      { name: "Angular", icon: SiAngular },
+      { name: "Svelte", icon: SiSvelte },
       { name: "HTML5", icon: FaHtml5 },
       { name: "CSS3", icon: FaCss3 },
       { name: "JavaScript", icon: FaJs },
@@ -42,17 +39,16 @@ const skills = [
     techs: [
       { name: "Node.js", icon: FaNodeJs },
       { name: "Express.js", icon: SiExpress },
-      { name: "Python", icon: FaPython },
-      { name: "PHP", icon: FaPhp },
-      { name: "Java", icon: FaJava },
+      { name: "RESTful APIs", icon: FaServer },
     ],
   },
   {
     category: "Database & DevOps",
     techs: [
       { name: "MongoDB", icon: SiMongodb },
+      { name: "MySQL", icon: SiMysql },
+      { name: "PostgreSQL", icon: SiPostgresql },
       { name: "Databases", icon: FaDatabase },
-      { name: "Docker", icon: FaDocker },
       { name: "AWS", icon: FaAws },
       { name: "Git", icon: FaGit },
     ],
