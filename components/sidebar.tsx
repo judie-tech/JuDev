@@ -97,7 +97,7 @@ export function Sidebar() {
           </nav>
           <div className="p-6">
             <p className="text-sm text-center animate-pulse">
-              © 2023 Your Name
+              © 2023 Judy Kagia
             </p>
           </div>
         </div>

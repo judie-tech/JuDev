@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaInstagram, FaDribbble } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 export function Hero() {
   return (
@@ -65,13 +65,7 @@ export function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground hover:text-primary transition-colors"
-          >
-            <FaDribbble
-              size={24}
-              className="animate-bounce"
-              style={{ animationDelay: "0.3s" }}
-            />
-          </a>
+          ></a>
         </div>
         <div className="flex justify-center space-x-4 animate-slideInBottom">
           <a
