@@ -11,7 +11,7 @@ const projects = [
       "A full-stack platform built with Next.js, Node.js, Express, and MongoDB that connects service providers with clients. Users can log in, browse businesses, view details (contact info, availability, images), and book appointments. Features include a booking system to prevent double bookings, confirmation messages, an intuitive interface, and responsive design.",
     image: "/images/nk.svg",
     github: "https://github.com/judie-tech/service-app",
-    live: "https://project1.com",
+    live: "https://project2.com",
   },
   {
     title: "FitSafari",
