@@ -11,7 +11,6 @@ const projects = [
       "A full-stack platform built with Next.js, Node.js, Express, and MongoDB that connects service providers with clients. Users can log in, browse businesses, view details (contact info, availability, images), and book appointments. Features include a booking system to prevent double bookings, confirmation messages, an intuitive interface, and responsive design.",
     image: "/images/nk.svg",
     github: "https://github.com/judie-tech/service-app",
-    
   },
   {
     title: "FitSafari",
@@ -19,7 +18,6 @@ const projects = [
       "I created the Fitness and Diet Tracker because of my love for fitness. This full-stack platform allows users to log workouts, manage diet plans, and track their progress. Built with React.js, Node.js, Express.js, and MongoDB, it offers personalized workout and meal suggestions, progress tracking, and community features to keep users motivated and on track with their fitness goals.",
     image: "/images/ok.jpg",
     github: "https://github.com/judie-tech/FitSafari",
-    
   },
   {
     title: "Ongoing Project",
@@ -88,16 +86,6 @@ export function Projects() {
                   >
                     <FaGithub className="mr-2" /> GitHub
                   </a>
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center text-primary hover:text-primary/80 transition-colors"
-                    >
-                      <FaExternalLinkAlt className="mr-2" /> Live Demo
-                    </a>
-                  )}
                 </div>
               </div>
             </div>
